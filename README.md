@@ -1,44 +1,43 @@
-# Project 01 – VLANs & Inter-VLAN Routing
+# Project 02 – HSRP Gateway Redundancy
 
 ## Project Overview
-Design and implementation of a small enterprise network using Cisco Packet Tracer.
+Implementation of Gateway Redundancy using HSRP in Cisco Packet Tracer.
 
 ## Objectives
-- Configure VLAN 10 (Sales).
-- Configure VLAN 20 (IT).
-- Configure Access and Trunk ports.
-- Implement Router-on-a-Stick.
-- Configure DHCP for both VLANs.
-- Verify inter-VLAN connectivity.
+- Configure HSRP between two Cisco routers.
+- Configure Active and Standby routers.
+- Configure a Virtual IP Address.
+- Set router priority and preemption.
+- Test Gateway Failover and Recovery.
 
 ## Network Topology
-![Network Topology](Screenshots/01-Topology.png)
+![HSRP Network Topology](01_topology.svg)
 
 ## IP Addressing
 
-| VLAN | Department | Network | Gateway |
-|---|---|---|---|
-| 10 | Sales | 192.168.10.0/24 | 192.168.10.1 |
-| 20 | IT | 192.168.20.0/24 | 192.168.20.1 |
+| Device | IP Address |
+|---|---|
+| R1 | 192.168.10.2/24 |
+| R2 | 192.168.10.3/24 |
+| Virtual Gateway | 192.168.10.1 |
 
 ## Technologies
 - Cisco Packet Tracer
-- VLAN
-- 802.1Q Trunking
-- Router-on-a-Stick
-- DHCP
+- HSRP
+- Gateway Redundancy
+- High Availability
 - IPv4
 
 ## Verification
-- VLAN configuration verified.
-- Trunk link verified.
-- DHCP address assignment tested.
-- Inter-VLAN connectivity verified using ICMP Ping.
+- Verified Active and Standby router states.
+- Tested gateway connectivity.
+- Simulated R1 failure.
+- Verified R2 takeover.
+- Tested R1 recovery using preemption.
 
-## Files
-- Packet Tracer simulation: `Packet-Tracer/`
-- Device configurations: `Configurations/`
-- Test screenshots: `Screenshots/`
+## Project Files
+- Packet Tracer simulation: `HSRP-Gateway-Redundancy.pkt`
+- Screenshots: `Screenshots/`
 
 ## Disclaimer
-This project is a personal educational lab developed in Cisco Packet Tracer. It is not a production deployment.
+This is a personal educational lab developed using Cisco Packet Tracer. It is not a production deployment.
