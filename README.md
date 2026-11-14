@@ -11,7 +11,7 @@ Implementation of Gateway Redundancy using HSRP in Cisco Packet Tracer.
 - Test Gateway Failover and Recovery.
 
 ## Network Topology
-![HSRP Network Topology](01-HSRP-Topology.png)
+![HSRP Network Topology](01-HSRP-Topology.png.png)
 
 ## IP Addressing
 
